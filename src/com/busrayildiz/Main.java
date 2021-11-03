@@ -2,20 +2,21 @@ package com.busrayildiz;
 
 import com.busrayildiz.LinkedList.LinkedList;
 
+import static com.busrayildiz.SortAlgorithms.BubbleSort.bubbleSort;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList l = new LinkedList();
-        l.insert(18);
-        l.insert(45);
-        l.insert(12);
+       int[] intArray = {20, 35, -15, 7, 55, 1, -22};
 
-        l.insertFirst(50);
-        l.insertAt(2,55);
-        l.deleteAt(1);
-
-        l.print();
+        for(int i = 0 ; i < intArray.length; i++){
+            System.out.print(intArray[i] + ",");
+        }
+        System.out.println();
+        bubbleSort(intArray);
 
     }
+
+
 }
