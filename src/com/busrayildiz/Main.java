@@ -2,6 +2,7 @@ package com.busrayildiz;
 
 import com.busrayildiz.LinkedList.LinkedList;
 
+import static com.busrayildiz.SortAlgorithms.InsertionSort.insertionSort;
 import static com.busrayildiz.SortAlgorithms.SelectionSort.selectionSort;
 
 public class Main {
@@ -14,7 +15,7 @@ public class Main {
             System.out.print(intArray[i] + ",");
         }
         System.out.println();
-        selectionSort(intArray);
+        insertionSort(intArray);
 
     }
 
