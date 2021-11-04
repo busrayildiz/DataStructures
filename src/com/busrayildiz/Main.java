@@ -1,19 +1,29 @@
 package com.busrayildiz;
 
-import static com.busrayildiz.SortAlgorithms.MergeSort.mergeSort;
+import com.busrayildiz.Lists.SinglyLinkedList;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
+        SinglyLinkedList<String> list = new SinglyLinkedList<>();
 
-        mergeSort(intArray, 0, intArray.length);
+        list.addFirst("a");
+        list.addLast("b");
+        list.addLast("c");
+        list.addLast("ç");
+        list.removeFirst();
 
-        for (int i = 0; i < intArray.length; i++) {
-            System.out.println(intArray[i]);
-        }
+        System.out.println(list.toString());
+
+
 
     }
+
+
 
 
 }
