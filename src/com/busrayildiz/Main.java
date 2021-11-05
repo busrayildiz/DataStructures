@@ -1,6 +1,7 @@
 package com.busrayildiz;
 
 
+import com.busrayildiz.DoublyLinkedList.DoublyLinkedList;
 import com.busrayildiz.SinglyLinkedList.LinkedList;
 
 public class Main {
@@ -43,16 +44,15 @@ public class Main {
         System.out.println();
         radixSort(intArray);
 */
-        LinkedList list = new LinkedList();
 
-        list.append(1);
+
+        DoublyLinkedList list = new DoublyLinkedList();
+
         list.append(2);
-        list.append(3);
         list.append(4);
-        list.prepend(0);
+        list.append(6);
+        list.prepend(6);
         list.deleteWithValue(2);
-
-
 
         list.printList();
 
