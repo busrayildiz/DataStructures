@@ -1,17 +1,7 @@
 package com.busrayildiz;
 
-import com.busrayildiz.DoublyLinkedList.DoublyLinkedList;
-import com.busrayildiz.LinkedList.LinkedList;
-import com.busrayildiz.LinkedList.Node;
-import com.busrayildiz.Lists.SinglyLinkedList;
-import com.busrayildiz.Stack.Stack;
-import com.busrayildiz.Stack.StackAsLinkedList;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static com.busrayildiz.SortAlgorithms.RadixSort.radixSort;
-
+import com.busrayildiz.SinglyLinkedList.LinkedList;
 
 public class Main {
 
@@ -53,19 +43,18 @@ public class Main {
         System.out.println();
         radixSort(intArray);
 */
+        LinkedList list = new LinkedList();
 
-        StackAsLinkedList sll = new StackAsLinkedList();
-        sll.push(12);
-        sll.push(23);
-        sll.push(34);
-        sll.push(45);
+        list.append(1);
+        list.append(2);
+        list.append(3);
+        list.append(4);
+        list.prepend(0);
+        list.deleteWithValue(2);
 
 
 
-
-
-        System.out.println("Top element is " + sll.peek());
-
+        list.printList();
 
 
 
