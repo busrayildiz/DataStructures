@@ -2,6 +2,7 @@ package com.busrayildiz;
 
 
 import com.busrayildiz.DoublyLinkedList.DoublyLinkedList;
+import com.busrayildiz.Queue.Queue;
 import com.busrayildiz.SinglyLinkedList.LinkedList;
 
 public class Main {
@@ -45,18 +46,14 @@ public class Main {
         radixSort(intArray);
 */
 
+        Queue q = new Queue();
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
+        q.remove();
 
-        DoublyLinkedList list = new DoublyLinkedList();
-
-        list.append(2);
-        list.append(4);
-        list.append(6);
-        list.prepend(6);
-        list.deleteWithValue(2);
-
-        list.printList();
-
-
+        q.printQueue();
 
 
 
