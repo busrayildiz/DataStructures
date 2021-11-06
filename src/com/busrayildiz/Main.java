@@ -1,9 +1,15 @@
 package com.busrayildiz;
 
 
+import com.busrayildiz.Challenges.Palindrome;
 import com.busrayildiz.DoublyLinkedList.DoublyLinkedList;
 import com.busrayildiz.Queue.Queue;
 import com.busrayildiz.SinglyLinkedList.LinkedList;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Main {
 
@@ -46,15 +52,7 @@ public class Main {
         radixSort(intArray);
 */
 
-        Queue q = new Queue();
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        q.remove();
-
-        q.printQueue();
-
+ System.out.println(Palindrome.checkForPalindrome("büşra"));
 
 
     }
