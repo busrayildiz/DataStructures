@@ -3,7 +3,7 @@ package com.busrayildiz;
 
 import java.util.*;
 
-import static com.busrayildiz.SearchAlgorithms.BinarySearch.iterativeBinarySearch;
+import static com.busrayildiz.SearchAlgorithms.RecursiveBinarySearch.recursiveBinarySearch;
 
 public class Main {
 
@@ -51,10 +51,15 @@ public class Main {
         int [] sortedarray = new int[array.length];
         Arrays.sort(array);
         for(int i = 0 ; i < array.length; i++ ) {
-           sortedarray[i] = i;
+           sortedarray[i] = array[i];
         }
 
- System.out.println(iterativeBinarySearch(sortedarray,1));
+        System.out.println(recursiveBinarySearch(sortedarray,-15));
+        System.out.println(recursiveBinarySearch(sortedarray,35));
+        System.out.println(recursiveBinarySearch(sortedarray,8888));
+        System.out.println(recursiveBinarySearch(sortedarray,1));
+
+
 
 
     }
