@@ -1,15 +1,9 @@
 package com.busrayildiz;
 
 
-import com.busrayildiz.Challenges.Palindrome;
-import com.busrayildiz.DoublyLinkedList.DoublyLinkedList;
-import com.busrayildiz.Queue.Queue;
-import com.busrayildiz.SinglyLinkedList.LinkedList;
+import java.util.*;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import static com.busrayildiz.SearchAlgorithms.BinarySearch.iterativeBinarySearch;
 
 public class Main {
 
@@ -52,7 +46,15 @@ public class Main {
         radixSort(intArray);
 */
 
- System.out.println(Palindrome.checkForPalindrome("büşra"));
+ int [] array = {20 ,35, -15, 7, 55, 1 , -22};
+
+        int [] sortedarray = new int[array.length];
+        Arrays.sort(array);
+        for(int i = 0 ; i < array.length; i++ ) {
+           sortedarray[i] = i;
+        }
+
+ System.out.println(iterativeBinarySearch(sortedarray,1));
 
 
     }
