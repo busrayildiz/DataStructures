@@ -26,6 +26,28 @@ public class BinarySearchTree {
         return null;
     }
 
+    public void delete(int value){
+        root = delete(root,value);
+    }
+
+    private TreeNode delete(TreeNode subtreeRoot,int value){
+        if(subtreeRoot == null) {
+            return subtreeRoot;
+        }
+        if(value < subtreeRoot.getData()){
+            subtreeRoot.setLeftChild(delete(subtreeRoot.getLeftChild(), value));
+        }
+        else if(value > subtreeRoot.getData()){
+            subtreeRoot.setRightChild(delete(subtreeRoot.getRightChild(),value));
+        }
+        else{
+            if(subtreeRoot.getLeftChild() == null){
+                return subtreeRoot.getRightChild();
+            }
+        }
+        return subtreeRoot;
+    }
+
     public int min(){
         if(root == null){
             return Integer.MIN_VALUE;
