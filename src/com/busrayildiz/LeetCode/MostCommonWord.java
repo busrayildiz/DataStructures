@@ -1,4 +1,4 @@
-package com.busrayildiz.Challenges;
+package com.busrayildiz.LeetCode;
 
 import java.util.HashMap;
 import java.util.HashSet;
