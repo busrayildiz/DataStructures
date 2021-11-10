@@ -9,23 +9,20 @@ public class ValidPalindrome {
         int l = 0;
         int r = s.length();
 
-        for (int i = 0; i < s.length()/2 ; i++) {
-            if(s.charAt(l) == s.charAt(r)){
+        for (int i = 0; i < s.length() / 2; i++) {
+            if (s.charAt(l) == s.charAt(r)) {
                 l++;
                 r--;
-            }
-            else
+            } else
                 return false;
         }
-
         return true;
-
     }
 
-    public String reverse(String s){
+    public String reverse(String s) {
         String str = "";
 
-        for(int i = s.length()-1; i>=0 ; --i){
+        for (int i = s.length() - 1; i >= 0; --i) {
             str += s.charAt(i);
         }
         return str;
@@ -36,18 +33,15 @@ public class ValidPalindrome {
         s = s.replaceAll("[^a-zA-Z0-9]", "").trim().toLowerCase();
 
         int l = 0;
-        int r = s.length()-1;
+        int r = s.length() - 1;
 
-        for (int i = 0; i < s.length()/2 ; i++) {
-            if(s.charAt(l) == s.charAt(r)){
+        for (int i = 0; i < s.length() / 2; i++) {
+            if (s.charAt(l) == s.charAt(r)) {
                 l++;
                 r--;
-            }
-            else
+            } else
                 return false;
         }
-
         return true;
-
     }
 }
