@@ -9,6 +9,12 @@ import java.util.Stack;
  * Note that after backspacing an empty text, the text will continue empty.
  * ***/
 
+/***
+ * Time Complexity: O(M + N)O(M+N), where M, NM,N are the lengths of S and T respectively.
+ *
+ * Space Complexity: O(M + N)O(M+N).
+ * ***/
+
 public class BackspaceStringCompare {
     public boolean backspaceCompare(String s, String t) {
         if(build(s).length()!=build(t).length())
@@ -30,7 +36,11 @@ public class BackspaceStringCompare {
         return String.valueOf(result);
     }
 
-
+/***
+ * Time Complexity: O(M + N)O(M+N), where M, NM,N are the lengths of S and T respectively.
+ *
+ * Space Complexity: O(1)O(1).
+ * ***/
         public boolean optimalBackspaceCompare(String S, String T) {
             int i = S.length() - 1, j = T.length() - 1;
             int skipS = 0, skipT = 0;
