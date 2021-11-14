@@ -8,11 +8,13 @@ public class BinarySearch {
         int start = 0;
         int end = input.length;
 
+
         while (start < end) {
             int midpoint = (start + end) / 2;
             System.out.println("midpoint = " + midpoint);
             if (input[midpoint] == value) {
                 return midpoint;
+
             }
             else if (input[midpoint] < value) {
                 start = midpoint + 1;
@@ -22,6 +24,7 @@ public class BinarySearch {
             }
 
         }
+
         return -1;
 
     }
