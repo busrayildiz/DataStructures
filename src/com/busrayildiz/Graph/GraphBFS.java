@@ -4,12 +4,13 @@ package com.busrayildiz.Graph;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class Graph {
+//BFS
+public class GraphBFS {
 
     private int V; //number of vertices
     private LinkedList<Integer> adj[];
 
-    Graph(int v) {
+    GraphBFS(int v) {
         V = v;
         adj = new LinkedList[v];
         for (int i = 0; i < v; i++) {
@@ -46,7 +47,7 @@ public class Graph {
 
     //  Time Complexity: O(V+E) where V is a number of vertices in the graph and E is a number of edges in the graph.
     public static void main(String args[]) {
-        Graph g = new Graph(4);
+        GraphBFS g = new GraphBFS(4);
 
         g.addEdge(0, 1);
         g.addEdge(0, 2);
